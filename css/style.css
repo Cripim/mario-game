@@ -19,7 +19,14 @@
   bottom: 0;
   width: 80px;
 
-  animation: pipe-animation 2s infinite linear;
+  animation: pipe-animation 2.4s infinite linear;
+}
+.pipe2 {
+  position: absolute;
+  bottom: 0;
+  width: 80px;
+
+  animation: pipe-animation2 3s infinite linear;
 }
 .mario {
   width: 150px;
@@ -37,6 +44,15 @@
 @keyframes pipe-animation {
   from {
     right: -80px;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes pipe-animation2 {
+  from {
+    right: -40px;
   }
   to {
     right: 100%;
